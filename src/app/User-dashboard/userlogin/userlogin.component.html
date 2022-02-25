@@ -1,0 +1,44 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <h1>Appointment Schedular</h1>
+    <div class="d-flex">
+      <div class="wrap">
+        <button class="button"><a routerLink="/signup">Register</a></button>
+      </div>
+      <div class="wrap">
+        <button class="button mx-3"><a routerLink="/login">User</a></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="text-center">
+            <h1>User Login</h1>
+          </div>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" formControlName="email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+              <div id="emailHelp" class="form-text">
+              </div>
+                <span
+                class="text-danger" *ngIf="email && email.invalid && email.touched">* Email address is Invalid</span><small
+                class="text-danger" *ngIf="email && email.errors?.['required'] && email.touched" >Email address is required</small>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1"
+ />
+              <span class="text-danger" *ngIf=" loginForm.controls['password'].touched && loginForm.hasError('required', 'password')" >*Password is required must minimum 5 and maximum 8 character</span >
+            </div>
+            <button [disabled]="!loginForm.valid"  type="submit"class="btn btn-primary mb-2" > Login</button>
+          </form>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+ 

@@ -1,0 +1,24 @@
+<app-user-navbar></app-user-navbar>
+<div class="container mt-5">
+    <table class="table table-bordered" style="text-align: center;">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Reason for Appointment</th>
+                <th scope="col">Room Details</th>
+                <th scope="col">Date</th>
+                <th scope="col">Start Time</th>
+                <th scope="col">End Time</th>            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of appointmentData">
+                <td> {{data.id}} </td>
+                <td> {{data.appointmentName}} </td>
+                <td> {{data.roomName}} </td>
+                <td> {{data.date}} </td>
+                <td> {{data.start_time}} </td>
+                <td> {{data.end_time}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

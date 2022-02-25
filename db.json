@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "Users": [
+    {
+      "fullname": "tshering tobgay",
+      "email": "tobgay@gmail.com",
+      "phone": 12813213,
+      "password": "qwertyuiop",
+      "isApprove": true,
+      "id": 1
+    }
+  ],
+  "roomlist": [
+    {
+      "id": 1,
+      "roomName": "IT room",
+      "description": "teacher parent meeting"
+    },
+    {
+      "id": 2,
+      "roomName": "Business conference hall",
+      "description": "we are have meeting today"
+    }
+  ],
+  "appointment": [
+    {
+      "id": 2,
+      "date": "2022-02-07",
+      "appointmentName": "training course short meeting",
+      "roomName": "IT room",
+      "start_time": "04:28",
+      "end_time": "18:31"
+    }
+  ],
+  "adminCredential": [
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin12",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
